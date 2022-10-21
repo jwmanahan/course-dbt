@@ -1,0 +1,12 @@
+version: 2
+
+exposures:
+  - name: Product Funnel Dashboard
+    description: A visualization of some aggregate metrics based on session-level event counts
+    type: dashboard
+    maturity: high # Refined data used broadly
+    owner:
+      name: Firstname Lastname
+      email: test@email.com
+    depends_on:
+      - ref('tbl_session_metrics')
